@@ -1,0 +1,76 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: spring-boot-demo
+  datasource:
+    url: jdbc:mysql://192.168.0.130:3306/petclinic?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&autoReconnect=true&failOverReadOnly=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+#    druid:
+    max-active: 20
+    initial-size: 1
+    min-idle: 3
+    max-wait: 60000
+    time-between-eviction-runs-millis: 100000
+    min-evictable-idle-time-millis: 300000
+    test-while-idle: true
+    test-on-borrow: false
+    test-on-return: false
+    poolPreparedStatements: true
+#    multiStatementAllow: true
+    timeBetweenLogStatsMillis: 100000
+    validationQuery: SELECT x
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall
+#    filters: stat,wall,log4j2
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+#spring.thymeleaf.cache: false
+#logging.config: classpath:log4j2.xml
+#debug: true
+
+# Web
+spring.thymeleaf.mode: HTML5
+spring.thymeleaf.prefix: classpath:/webapp/
+spring.thymeleaf.suffix: .html
+# Allow Thymeleaf templates to be reloaded at dev time
+spring.thymeleaf.cache: false
+server.tomcat.access_log_enabled: true
+server.tomcat.basedir: target/tomcat
+
+# JPA
+spring.jpa.hibernate.ddl-auto: none
+# Internationalization
+spring.messages.basename: messages/messages
+# Actuator / Management
+management.contextPath: /sys
+# Spring Boot 1.5 makes actuator secure by default
+management.security.enabled: false
+# Logging
+logging.level.org.springframework: INFO
+# logging.level.org.springframework.web=DEBUG
+# logging.level.org.springframework.context.annotation=TRACE
+# Active Spring profiles
+spring.profiles.active: production
+# Caching
+spring.cache.cache-names: vets
+
+#server.servlet-path: /sys
+#endpoints.sensitive: false
+#endpoints.shutdown.enabled: true
+
+#spring.boot.admin.url: http://localhost:8081
+#
+#eureka:
+#  instance:
+#    leaseRenewalIntervalInSeconds: 10
+#  client:
+#    registryFetchIntervalSeconds: 5
+#    serviceUrl:
+#      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka/
