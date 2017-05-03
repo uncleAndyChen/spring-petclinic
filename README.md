@@ -35,4 +35,4 @@ mvn spring-boot:run #运行
 1. 也可以通过IDEA执行 mvn spring-boot:run，在运行配置里选maven，在Commond line栏处输入：spring-boot:run
 1. 通过上面步骤成功运行之后，访问：http://localhost:8083
 
-#### 说明：该demo来自spring官方，要看官方原版，[猛戳进入](https://github.com/spring-projects/spring-petclinic)。
+#### 说明：该demo来自spring官方，简单改了一下，要看官方原版，[猛戳进入](https://github.com/spring-projects/spring-petclinic)。
