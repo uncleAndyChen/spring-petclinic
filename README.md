@@ -1,9 +1,9 @@
-# spring 官方例子 宠物医院，公司内部技术分享时用到，有微调
-* 把默认数据源改成了mysql
-* 数据库连接池改成了druid
-* 修改web目录为webapp
+# spring 官方例子->宠物医院，改为 MySQL + druid 了
+1. 把默认数据源改成了mysql
+1. 数据库连接池改成了druid
+1. 修改web目录为webapp
 
-# 运行
+###  运行
 1. 从git china上clone代码
 ```bash
 git clone https://git.oschina.net/elsafly/spring-petclinic.git
@@ -36,4 +36,5 @@ mvn spring-boot:run #运行
 1. 还可以在运行配置里增加一项 maven 启动，在Commond line栏处输入：spring-boot:run，这种方式还可以利用 IDEA 的调试功能。
 1. 通过上面步骤成功运行之后，访问：http://localhost:8083
 
-#### 说明：该demo来自spring官方，简单改了一下，要看官方原版，[猛戳进入](https://github.com/spring-projects/spring-petclinic)。
+### 说明
+该demo来自spring官方，简单改了一下，要看官方原版，[猛戳进入](https://github.com/spring-projects/spring-petclinic)。
