@@ -1,4 +1,5 @@
 # spring 官方例子->宠物医院，改为 MySQL + druid 了
+修改部分
 1. 把默认数据源改成了mysql
 1. 数据库连接池改成了druid
 1. 修改web目录为webapp
