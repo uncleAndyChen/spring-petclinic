@@ -32,7 +32,8 @@ mvn spring-boot:run #运行
 1. 如果通过上面的运行脚本，运行过程中有错误，则执行 mvn clean compile，会下载所需依赖，看到编译成功之后，再执行 mvn spring-boot:run
 1. 通过上面的步骤成功运行之后，也可以直接运行PetClinicApplication.main，IDEA会自动识别，可直接运行。
 1. 在执行mvn spring-boot:run 之前就直接通过IDEA运行spring-boot入口方法，即PetClinicApplication.main，css样式和js不会被加载，因为这个demo的css和js是动态生成的。
-1. 也可以通过IDEA执行 mvn spring-boot:run，在运行配置里选maven，在Commond line栏处输入：spring-boot:run
+1. 也可以通过 IDEA 的 Terminal 命令窗口执行 mvn spring-boot:run
+1. 还可以在运行配置里增加一项 maven 启动，在Commond line栏处输入：spring-boot:run，这种方式还可以利用 IDEA 的调试功能。
 1. 通过上面步骤成功运行之后，访问：http://localhost:8083
 
 #### 说明：该demo来自spring官方，简单改了一下，要看官方原版，[猛戳进入](https://github.com/spring-projects/spring-petclinic)。
