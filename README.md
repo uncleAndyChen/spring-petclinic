@@ -10,7 +10,7 @@
 git clone https://git.oschina.net/elsafly/spring-petclinic.git
 ```
 
-1. 创建mysql数据库和初始化数据。执行resources/db/mysql/schema.sql，没有创建数据库petclinic的话，会自动创建，不过，建议先手动创建，通过以下脚本创建，可以指定编码格式
+1. 创建mysql数据库和初始化数据。执行resources/db/mysql/schema.sql，没有创建数据库petclinic的话，会自动创建，以下手动创建脚本与自动创建的等效。
 ```sql
 create schema petclinic default character set utf8;
 ```
