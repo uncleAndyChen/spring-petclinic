@@ -5,9 +5,9 @@
 1. 修改web目录为webapp
 
 ###  运行
-1. 从git china上clone代码
+1. 
 ```bash
-git clone https://git.oschina.net/elsafly/spring-petclinic.git
+git clone https://github.com/uncleAndyChen/spring-petclinic.git
 ```
 
 1. 创建mysql数据库和初始化数据。执行resources/db/mysql/schema.sql，没有创建数据库petclinic的话，会自动创建，以下手动创建脚本与自动创建的等效。
